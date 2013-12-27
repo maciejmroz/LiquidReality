@@ -1,0 +1,9 @@
+; LRSpinner.def : Declares the module parameters.
+
+LIBRARY      "LRSPINNER.OCX"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer PRIVATE

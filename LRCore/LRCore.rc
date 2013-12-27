@@ -1,0 +1,141 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ENGINE_CONFIG DIALOGEX 0, 0, 192, 170
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "3D Engine configuration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,3,154,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,139,154,50,14,BS_FLAT
+    LTEXT           "Display mode:",IDC_STATIC,4,2,46,8
+    COMBOBOX        IDC_DISPLAY_MODE_COMBO,1,11,91,65,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Windowed",IDC_WINDOWED_CHECK,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,4,86,49,10
+    LTEXT           "Device type:",IDC_STATIC,100,2,42,8
+    COMBOBOX        IDC_DEVICE_TYPE_COMBO,98,11,91,51,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Rendertarget resolution:",IDC_STATIC,4,28,80,8
+    COMBOBOX        IDC_RT_RESOLUTION_COMBO,1,37,91,51,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Triple buffering",IDC_TRIPLE_BUFFER_CHECK,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,4,99,65,10
+    COMBOBOX        IDC_TX_FILTERING_COMBO,1,63,91,68,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Texture filtering:",IDC_STATIC,4,53,55,8
+    CONTROL         "Change refresh rate",IDC_CHANGE_REFRESH_RATE_CHECK,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,4,113,81,10
+    CONTROL         "VSync",IDC_VSYNC_CHECK,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,4,128,35,10
+    COMBOBOX        IDC_PIXEL_SHADER_VERSION_COMBO,98,37,91,56,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Pixel shader version limit:",IDC_STATIC,100,27,82,8
+    CONTROL         "Line antialiasing",IDC_LINE_ANTIALIAS_CHECK,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,98,86,66,10
+    CONTROL         "Auto mipmap generation",IDC_AUTOMIPMAP_CHECK,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,98,99,94,10
+    LTEXT           "Display device aspect:",IDC_STATIC,100,55,72,8
+    COMBOBOX        IDC_DEVICE_ASPECT_COMBO,98,63,91,51,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Save settings in system registry",IDC_SAVE_SETTINGS_CHECK,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,4,142,118,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ENGINE_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        BOTTOMMARGIN, 168
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// FXFILE
+//
+
+IDR_DEFAULT_FX          FXFILE                  "fx\\default.fx"
+IDR_GRAYSCALE_FX        FXFILE                  "fx\\grayscale.fx"
+IDR_NEGATIVE_FX         FXFILE                  "fx\\negative.fx"
+IDR_SIMPLE_BLUR_FX      FXFILE                  "fx\\simple_blur.fx"
+IDR_ALPHA_COMPOSE_FX    FXFILE                  "fx\\alphacompose.fx"
+IDR_MASK_FX             FXFILE                  "fx\\mask.fx"
+IDR_PREMUL_ALPHA_COMPOSE_FX FXFILE                  "fx\\premul_alphacompose.fx"
+IDR_SPRITE_DRAW_FX      FXFILE                  "fx\\sprite_draw.fx"
+IDR_3X3_TRANSFORM_FX    FXFILE                  "fx\\3x3transform.fx"
+IDR_OVERBRIGHT_FX       FXFILE                  "fx\\overbright.fx"
+IDR_COLOR_REMAP_FX      FXFILE                  "fx\\color_remap.fx"
+IDR_DYNAMIC_TEXTURE_OFFSET_FX FXFILE                  "fx\\dynamic_texture_offset.fx"
+IDR_TILED_MASK_FX       FXFILE                  "fx\\tiled_mask.fx"
+IDR_EMBOSS_FX           FXFILE                  "fx\\emboss.fx"
+IDR_LAYER_COMPOSE_FX    FXFILE                  "fx\\layer_compose.fx"
+IDR_DIRECTIONAL_LIGHT_FX FXFILE                  "fx\\directional_light.fx"
+IDR_NEGATIVE_SHIFT_FACTOR_FX FXFILE                  "fx\\negative_shift_factor.fx"
+IDR_GRAYSCALE_SHIFT_FACTOR_FX FXFILE                  "fx\\grayscale_shift_factor.fx"
+IDR_STATIC_TEXTURE_OFFSET_FX FXFILE                  "fx\\static_texture_offset.fx"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
